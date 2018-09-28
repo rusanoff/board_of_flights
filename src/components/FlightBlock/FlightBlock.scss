@@ -1,0 +1,43 @@
+.flight-cell {
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 1px solid #000;
+  width: 100%;
+  padding: 10px 0 10px 0;
+  font-size: 18px;
+
+  &__left,
+  &__right {
+    display: flex;
+    flex-direction: column;
+  }
+
+  &__right {
+    justify-content: flex-end;
+    text-align: right;
+  }
+
+  &__time {
+
+    &_crossed {
+      text-decoration: line-through;
+      font-size: 14px;
+      margin-left: 5px;
+    }
+
+    &_delayed {
+      color: #ff0000;
+      font-weight: 700;
+    }
+  }
+
+  &__terminal,
+  &__city,
+  &__flight-number {
+    font-weight: 700;
+  }
+
+  &__city {
+    font-size: 24px;
+  }
+}

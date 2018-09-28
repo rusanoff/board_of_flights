@@ -1,0 +1,24 @@
+@keyframes rotate {
+  from {
+    transform: none;
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.loader {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  margin: 40px 0 40px 0;
+  height: 100px;;
+
+  &__icon {
+    stroke-dashoffset: 0;
+    stroke: #ffcc00;
+    stroke-width: 10px;
+    transform-origin: 50px 50px 0;
+    animation: rotate 1s linear infinite;
+  }
+}
